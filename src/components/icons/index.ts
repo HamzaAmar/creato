@@ -25,3 +25,5 @@ export { default as ChevronUp } from './chevronUp';
 export { default as Send } from './send';
 export { default as Logo } from './logo';
 export { default as Phone } from './phone';
+export { default as Cross } from './cross';
+export { default as Check } from './check';

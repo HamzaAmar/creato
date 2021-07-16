@@ -21,14 +21,19 @@
   letter-spacing: 2px;
   word-spacing: 1px;
 }
-.solutionContainer {
-  padding: 0 3rem;
+.section {
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+.solutionInfoContainer {
+  margin-bottom: 3rem;
   text-align: center;
 }
 .solution {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  row-gap: 3rem;
 }
 .solutionItem {
   display: flex;
@@ -36,4 +41,79 @@
 }
 .solutionItemInfo {
   margin-left: 1rem;
+}
+.headingMedium {
+  line-height: 1.7;
+  margin-bottom: 0.5rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.paragraph {
+  line-height: 1.7;
+  margin-bottom: 0.5rem 0;
+}
+
+/* plan section styles */
+
+.plansContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding: 0 2rem;
+}
+
+.planContainer {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.planContainer:nth-child(2) {
+  transform: scale(1.05, 1.1);
+}
+
+.planHeader {
+  height: 12rem;
+  color: white;
+}
+
+.planType {
+  height: 80%;
+  background-color: var(--color-primary-light);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  display: grid;
+  place-items: center;
+}
+.priceContainer {
+  position: relative;
+}
+.price {
+  background-color: var(--color-primary-light);
+  width: max-content;
+  height: 3.5rem;
+  width: 10rem;
+  display: grid;
+  place-items: center;
+  /* border-radius: 50%; */
+  border: 7px solid var(--background-light);
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  background-clip: padding-box;
+  border-radius: 0.5rem;
+}
+.planDetail {
+  padding: 1rem;
+}
+.planDetailItem {
+  line-height: 2;
+}
+.planDetailItemName {
+  margin-left: 1rem;
+}
+.planFooter {
+  padding: 1rem;
 }
