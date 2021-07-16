@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+:root {
+  --background-light: #444444;
+  --background-main: #303030;
+  --background-dark: #1c1c1c;
+
+  --color-primary-light: #08b1ff;
+  --color-primary-main: #1486bb;
+  --color-primary-dark: #176285;
+
+  --info-color-light: #15b4df;
+  --info-color-main: #005bea;
+  --info-color-dark: #1b3585;
+
+  --danger-color-light: #f67389;
+  --danger-color-main: #f94967;
+  --danger-color-dark: #a83447;
+
+  --warning-color-light: #efa55e;
+  --warning-color-main: #f76b2e;
+  --warning-color-dark: #9b421c;
+
+  --success-color-light: #46d4a6;
+  --success-color-main: #029666;
+  --success-color-dark: #036344;
+
+  --color-on-background: #333;
+  --color-on-primary: #fff;
+  --color-on-secondary: #fff;
+}
+@media (max-width: 410px) {
+  :root {
+    --spacing-sm: 0.25rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  box-sizing: border-box;
+  color: var(--color-on-background);
+  background-color: var(--color-background-main);
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Hepta Slab', sans-serif;
+  font-weight: 300;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-background-light);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  outline: 1px solid slategrey;
+  border-radius: 2px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+[data-theme='dark'] {
+  --color-background-dark: #d4d3d3;
+  --color-background-main: #e4e4e4;
+  --color-background-light: #f1f1f1;
+
+  --color-secondary: #333;
+  --color-text: #333;
+}
+
+a {
+  font-family: 'Hepta Slab', sans-serif;
+  text-decoration: none;
+
+  font-variation-settings: 'wght' 200;
+}
+ul {
+  font-family: 'Hepta Slab', sans-serif;
+  list-style: none;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hepta Slab', sans-serif;
+  font-weight: 700;
+}
+.highlight-line {
+  background-color: rgba(201, 167, 255, 0.2);
+  margin: 0 -10px;
+  padding: 0 5px;
+  border-left: 5px solid #c9a7ff;
+}
+
+p {
+  font-family: 'Hepta Slab', serif;
+  font-weight: 300;
+  line-height: 1.65;
+}

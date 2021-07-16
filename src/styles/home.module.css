@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.svgContainer {
+  flex: 1;
+}
+.aboutInfo {
+  flex: 1;
+}
+
+.svgContainer > svg {
+  width: 100%;
+}
+.heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+}
+.solutionContainer {
+  padding: 0 3rem;
+  text-align: center;
+}
+.solution {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.solutionItem {
+  display: flex;
+  align-items: center;
+}
+.solutionItemInfo {
+  margin-left: 1rem;
+}

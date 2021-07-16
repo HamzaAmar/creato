@@ -1,0 +1,31 @@
+.switcherContainer {
+  --height: 1.25rem;
+  width: 2.5rem;
+  height: var(--height);
+  border-radius: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  position: relative;
+}
+
+.mode {
+  width: var(--height);
+  height: var(--height);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.dark {
+  /* background-color: transparent; */
+  transform: translateX(0);
+  box-shadow: inset 0.7em -0.2em;
+}
+
+.light {
+  /* background-color: transparent; */
+  transform: translateX(100%);
+  box-shadow: inset var(--height) var(--height) rgb(253, 188, 48);
+}

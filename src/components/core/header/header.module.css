@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+.socialMediaList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialMediaItem {
+  margin: 0 1rem;
+}
